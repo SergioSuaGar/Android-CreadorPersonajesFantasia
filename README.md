@@ -1,4 +1,4 @@
-# Android Studio | CreadorPersonajesFantasia
+# Android Studio | CreadorPersonajesFantasía
 
 Mi primera aplicación en Android, desarrollada con Android Studio 3.5.1
 
