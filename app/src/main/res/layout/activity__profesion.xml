@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen_fondo2"
+    tools:context=".Activity_Profesion">
+
+    <Button
+        android:id="@+id/botonAtras2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="588dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="atras"
+        android:text="@string/botonAtras"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="596dp"
+        android:max="100"
+        android:progress="32"
+        android:progressTint="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/botonAtras2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonCrear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="588dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="siguiente"
+        android:text="@string/botonSiguiente"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/progressBar2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioHipnotizador"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/hipnotizador_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioHipnotizador"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioElementalista"
+        app:layout_constraintTop_toBottomOf="@+id/radioIngeniero" />
+
+    <RadioButton
+        android:id="@+id/radioElementalista"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/elementalista_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioElementalista"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/radioNigromante"
+        app:layout_constraintTop_toBottomOf="@+id/radioLadron" />
+
+    <RadioButton
+        android:id="@+id/radioGuerrero"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/guerrero_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioGuerrero"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioIngeniero"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ingeniero_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioIngeniero"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/radioLadron"
+        app:layout_constraintTop_toBottomOf="@+id/radioRetornado" />
+
+    <RadioButton
+        android:id="@+id/radioLadron"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ladron_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioLadron"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/radioGuardabosques"
+        app:layout_constraintTop_toBottomOf="@+id/radioGuardian" />
+
+    <RadioButton
+        android:id="@+id/radioGuardabosques"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/guardabosques_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioGuardabosques"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGuerrero" />
+
+    <RadioButton
+        android:id="@+id/radioGuardian"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/guardian_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioGuardian"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/radioGuerrero"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioNigromante"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/nigromante_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioNigromante"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGuardabosques" />
+
+    <TextView
+        android:id="@+id/textoTituloProfesion"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/textoTituloProfesion"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioRetornado"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/retornado_gris"
+        android:buttonTint="@android:color/background_light"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/radioRetornado"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGuardian"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoProfesion"
+        android:layout_width="156dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="440dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDescripcionProfesion"
+        android:layout_width="377dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoProfesion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

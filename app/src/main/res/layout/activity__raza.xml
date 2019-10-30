@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textoTituloRaza"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen_fondo2"
+    tools:context=".Activity_Raza">
+
+    <ImageButton
+        android:id="@+id/botonNorn"
+        android:layout_width="80dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="67dp"
+        android:background="@null"
+        android:onClick="razaNorn"
+        app:layout_constraintEnd_toStartOf="@+id/botonAsura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raza_norn_gris" />
+
+    <ImageButton
+        android:id="@+id/botonHumano"
+        android:layout_width="80dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="69dp"
+        android:background="@null"
+        android:onClick="razaHumano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonBestia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raza_humano_gris" />
+
+    <ImageButton
+        android:id="@+id/botonBestia"
+        android:layout_width="80dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        android:onClick="razaBestia"
+        app:layout_constraintEnd_toStartOf="@+id/botonHumano"
+        app:layout_constraintStart_toEndOf="@+id/botonSylvari"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raza_bestia_gris" />
+
+    <ImageButton
+        android:id="@+id/botonAsura"
+        android:layout_width="80dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        android:onClick="razaAsura"
+        app:layout_constraintEnd_toStartOf="@+id/botonSylvari"
+        app:layout_constraintStart_toEndOf="@+id/botonNorn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raza_asura_gris" />
+
+    <ImageButton
+        android:id="@+id/botonSylvari"
+        android:layout_width="80dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        android:onClick="razaGuardabosques"
+        app:layout_constraintEnd_toStartOf="@+id/botonBestia"
+        app:layout_constraintStart_toEndOf="@+id/botonAsura"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raza_guardabosques_gris" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="80dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/textoTituloRaza"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoNombreRaza"
+        android:layout_width="111dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="424dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDescripcionRaza"
+        android:layout_width="381dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="464dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="siguiente"
+        android:text="@string/botonSiguiente"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="atras"
+        android:text="@string/botonAtras"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="21dp"
+        android:max="100"
+        android:progress="16"
+        android:progressTint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/botonSiguiente"
+        app:layout_constraintStart_toEndOf="@+id/botonAtras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

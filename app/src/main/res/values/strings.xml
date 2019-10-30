@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CreadorPersonajes</string>
+    <string name="textoTituloMain">Guild Wars\nHorizon</string>
+    <string name="botonCrearMain">Crear Personaje</string>
+    <string name="botonPersonajesMain">Mis Personajes</string>
+    <string name="botonExplorarMain">Wiki</string>
+
+    <string name="textoTituloRaza">Raza</string>
+    <string name="textoNombreRaza"></string>
+    <string name="textoDescripcionRaza"></string>
+    <string name="botonAtras">Atrás</string>
+    <string name="botonSiguiente">Siguiente</string>
+
+    <string name="textoTituloProfesion">Profesión</string>
+    <string name="radioGuerrero">Guerrero</string>
+    <string name="radioGuardian">Guardian</string>
+    <string name="radioRetornado">Retornado</string>
+    <string name="radioGuardabosques">Guardabosques</string>
+    <string name="radioLadron">Ladrón</string>
+    <string name="radioIngeniero">Ingeniero</string>
+    <string name="radioNigromante">Nigromante</string>
+    <string name="radioElementalista">Elementalista</string>
+    <string name="radioHipnotizador">Hipnotizador</string>
+    <string name="textoProfesion"></string>
+    <string name="textoDescripcionProfesion"></string>
+
+    <string name="textoTituloBiografia1">Mi historia...</string>
+    <string name="textoBiografiaCompletar1"></string>
+    <string name="textoBiografiaCompletar2"></string>
+    <string name="textoBiografiaCompletar3"></string>
+
+    <string name="textoTituloDatos">Datos</string>
+    <string name="textoNombreDatos">Nombre</string>
+    <string name="textoGeneroDatos">Género</string>
+    <string name="textoEdadDatos">Edad</string>
+    <string name="textoClaseDatos">Raza</string>
+    <string name="textoProfesionDatos">Profesión</string>
+    <string name="textoTituloBiografia">Biografía:</string>
+    <string name="textoBiografia"></string>
+    <string name="botonCrear">Crear</string>
+</resources>

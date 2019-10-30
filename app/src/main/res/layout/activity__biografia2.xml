@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen_fondo2"
+    tools:context=".Activity_Biografia2">
+
+    <ImageButton
+        android:id="@+id/imagenOpcion1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:onClick="seleccionarOpcion1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoBiografiaCompletar2" />
+
+    <ImageButton
+        android:id="@+id/imagenOpcion3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="seleccionarOpcion3"
+        app:layout_constraintStart_toEndOf="@+id/imagenOpcion2"
+        app:layout_constraintTop_toBottomOf="@+id/textoBiografiaCompletar2" />
+
+    <ImageButton
+        android:id="@+id/imagenOpcion2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="seleccionarOpcion2"
+        app:layout_constraintStart_toEndOf="@+id/imagenOpcion1"
+        app:layout_constraintTop_toBottomOf="@+id/textoBiografiaCompletar2" />
+
+    <Button
+        android:id="@+id/botonAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="548dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="atras"
+        android:text="@string/botonAtras"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="556dp"
+        android:max="100"
+        android:progress="64"
+        android:progressTint="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/botonAtras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="548dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/medievalsharp"
+        android:onClick="siguiente"
+        android:text="@string/botonSiguiente"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/progressBar4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoBiografiaCompletar2"
+        android:layout_width="370dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/textoBiografiaCompletar2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoTituloBiografia2" />
+
+    <TextView
+        android:id="@+id/textoTituloBiografia2"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/textoTituloBiografia1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloOpcionElegida"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoBiografia2"
+        android:layout_width="368dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="384dp"
+        android:fontFamily="@font/medievalsharp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
